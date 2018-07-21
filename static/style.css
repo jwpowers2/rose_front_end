@@ -31,6 +31,13 @@ body{
   
 }
 
+.text_container table{
+  margin: 0 auto;
+  text-align:center;
+}
+
+
+
 .header {
   overflow: hidden;
   padding: 20px 10px;

@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
     <script src="../dash_state.js"></script>
 </head>
-<body onload="isLoggedIn()">
+<body onload="isLoggedIn(), getUsers()">
 
 <div class="header">
   <a href="/" class="logo">Rose</a>
@@ -23,9 +23,10 @@
 
 <br>
 <br>
-<h1>Rose Dash Page</h3>
-
-
+<div class="text_container">
+<h1>Rose Dash Page</h1>
+<div id="users_table"></div>
+</div>
 
 
 
