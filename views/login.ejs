@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stockoc</title>
+	<link rel="stylesheet" href="../style.css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+  <script src="../login_state.js"></script>
+
+</head>
+<body onload="isLoggedIn()">
+
+  
+
+<div class="header">
+  <a href="/" class="logo">Rose</a>
+  <div class="header-right">
+
+    <a href="/home">home</a>
+    <a href="/login">login</a>
+    <a onclick="logOut()">logout</a>
+    
+
+  </div>
+</div>
+
+
+    
+    	<div class="text_container">
+      <h2>login</h2>
+
+      <p id="error"></p>
+      <form action="javascript:login()">
+      <input class="login_input" id="loginEmail" placeholder="email">
+      <br>
+      <input class="login_input" type="password" id="loginPassword" placeholder="password">
+      <br>
+      <input type="submit" class="dash_button" value="login">
+      </form>
+      <br>
+      <h2>registration</h2>
+
+      <form action="javascript:register()">
+      <input class="login_input" id="registerEmail" placeholder="email">
+      <br>
+      <input class="login_input" type="password" id="registerPassword" placeholder="password">
+      <br>
+      <input type="submit" class="dash_button" value="register">
+      </form>
+      </div>
+
+
+
+</body>
+</html>

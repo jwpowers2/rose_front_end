@@ -1,0 +1,151 @@
+*{
+	/*border: 2px dashed black;*/
+	font-family: 'Share Tech', sans-serif;
+}
+
+body{
+    background: transparent;
+  background-image:
+    radial-gradient(#f2f2f2 20%, transparent 0), 
+    radial-gradient(#f2f2f2 20%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.login_input{
+  width: 20em;
+  height: 3em;
+  border-radius: 5px;
+  font-size: 1em;
+  margin: 5px;
+}
+.text_container{
+  margin: 5em auto;
+  width: 65%;
+  height:50%;
+  text-align:center;
+  border:1px solid purple;
+  padding: 2em;
+  color:purple;
+  display: block;
+  
+}
+
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
+  background-color: transparent;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+color: purple;
+}
+
+
+.header a.logo {
+  font-size: 50px;
+  font-weight: bold;
+}
+.header a:hover {
+  
+  color:#e3aaed;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header{
+    width:25em;
+    height:8em;
+    background-color:transparent;
+    border:none;
+  }
+  .header a {
+    float: none;
+    display: inline-block;
+    text-align: left;
+    
+  }
+  .header-right {
+    float: none;
+  }
+  .login_input{
+    width:100%;
+  }
+
+  .text_container{
+  
+  width: 25em;
+  
+  text-align:center;
+  border:none;
+  padding: 2em;
+  color:purple;
+  display: block;
+  
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  .header{
+    width:60em;
+    height:8em;
+  }
+  .header a {
+    float: none;
+    display: inline-block;
+    text-align: left;
+    
+  }
+  .header-right {
+    float: none;
+  }
+  .ticker_text{
+  margin: 2em auto;
+  width: 80%;
+  height: 6em;
+  border: 1px solid purple;
+  border-radius: 5px;
+  background-color: white;
+  font-size:2em;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1500px) {
+  .header{
+    width:72em;
+    height:8em;
+  }
+  .header a {
+    float: none;
+    display: inline-block;
+    text-align: left;
+    
+  }
+  .header-right {
+    float: none;
+  }
+  .ticker_text{
+  margin: 2em auto;
+  width: 80%;
+  height: 8em;
+  border: 1px solid purple;
+  border-radius: 5px;
+  background-color: white;
+  font-size:2em;
+  }
+}
+
+
+
