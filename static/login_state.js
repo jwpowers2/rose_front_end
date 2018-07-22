@@ -84,9 +84,13 @@ function register(){
 
   axios.post("http://localhost:5000/api/register",{
 
+        first_name: document.getElementById('registerFirstName').value,
+        last_name: document.getElementById('registerLastName').value,
+        home: document.getElementById('registerHome').value,
         email: document.getElementById('registerEmail').value,
         password: document.getElementById('registerPassword').value,
         confirm_password: document.getElementById('confirmPassword').value
+
         })
         .then((response)=>{
         
@@ -95,7 +99,11 @@ function register(){
           } else {
             //console.log(response.data);
             goHome(response.data.jwt_id);
-            
+            /*
+            if (resonse.data.jwt_id){
+              goHome(response.data.jwt_id);
+            }
+            */
           }
         
         })

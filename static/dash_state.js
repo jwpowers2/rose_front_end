@@ -111,13 +111,15 @@ function deleteUser(user_id){
 
 function buildTable(array, dom_object){
 	
-    let ticker_content = "<table><tr><th>id</th><th>email</th><th>created on</th></tr><tbody>";
+    let ticker_content = "<table><tr><th>id</th><th>first name</th><th>last name</th><th>home</th><th>email</th></tr><tbody>";
     
     array.forEach(function (element){
     
       let to_insert = `<tr id="${element.id}"><td>${element.id}</td>
+                       <td>${element.first_name}</td>
+                       <td>${element.last_name}</td>
+                       <td>${element.home}</td>
                        <td>${element.email}</td>
-                       <td>${element.created_at}</td>
                        <td><button onclick="deleteUser(${element.id})">deleteUser</button></td></tr>`;
 
       ticker_content += to_insert;
