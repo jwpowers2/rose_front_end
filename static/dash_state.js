@@ -115,7 +115,8 @@ function buildTable(array, dom_object){
     
     array.forEach(function (element){
     
-      let to_insert = `<tr id="${element.id}"><td>${element.id}</td>
+      let to_insert = `<tr class="table_row" id="${element.id}">
+                       <td >${element.id}</td>
                        <td>${element.first_name}</td>
                        <td>${element.last_name}</td>
                        <td>${element.home}</td>

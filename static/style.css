@@ -36,7 +36,15 @@ body{
   text-align:center;
 }
 
+.table_row{
+  padding: 10px;
+  color:gray;
+}
 
+.table_row td{
+  font-size:20px;
+  padding: 10px;
+}
 
 .header {
   overflow: hidden;
