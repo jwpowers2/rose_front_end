@@ -7,7 +7,7 @@ function isLoggedIn(){
 
   if(localStorage.getItem('id') !== null){
 
-    axios.get("http://165.227.210.72:5000/api/auth/user", {
+    axios.get("//165.227.210.72:5000/api/auth/user", {
           headers: {
             'Content-Type':'application/json',
             'x-access-token': `${localStorage.getItem('id')}`
@@ -55,7 +55,7 @@ async function goHome(data){
 
 function login(){
 
-  axios.post("http://165.227.210.72:5000/api/login",{
+  axios.post("//165.227.210.72:5000/api/login",{
 
         email: document.getElementById('loginEmail').value,
         password: document.getElementById('loginPassword').value
@@ -82,7 +82,7 @@ function login(){
 
 function register(){
 
-  axios.post("http://165.227.210.72:5000/api/register",{
+  axios.post("//165.227.210.72:5000/api/register",{
 
         first_name: document.getElementById('registerFirstName').value,
         last_name: document.getElementById('registerLastName').value,
