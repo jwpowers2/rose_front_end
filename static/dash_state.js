@@ -7,7 +7,7 @@ function isLoggedIn(){
 
   if(localStorage.getItem('id') !== null){
 
-    axios.get("http://localhost:5000/api/auth/user", {
+    axios.get("http://165.227.210.72:5000/api/auth/user", {
           headers: {
             'Content-Type':'application/json',
             'x-access-token': `${localStorage.getItem('id')}`
@@ -41,7 +41,7 @@ function getUsers(){
 
   if(localStorage.getItem('id') !== null){
 
-    axios.get("http://localhost:5000/api/users", {
+    axios.get("http://165.227.210.72:5000/api/users", {
           headers: {
             'Content-Type':'application/json',
             'x-access-token': `${localStorage.getItem('id')}`
@@ -77,7 +77,7 @@ function deleteUser(user_id){
     //
     if(localStorage.getItem('id') !== null){
 
-    axios.delete("http://localhost:5000/api/users/" + user_id, {
+    axios.delete("http://165.227.210.72:5000/api/users/" + user_id, {
           headers: {
             'Content-Type':'application/json',
             'x-access-token': `${localStorage.getItem('id')}`

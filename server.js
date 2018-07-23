@@ -8,7 +8,6 @@ var bodyParser = require('body-parser');
 var app = express();
 const port = 80;
 
-/*
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE,OPTIONS');
@@ -23,7 +22,6 @@ app.use(function(req, res, next) {
       next();
     }
 });
-*/
 app.use(express.static(path.join(__dirname, "./static")));
 app.use(bodyParser.json());
 
@@ -33,6 +31,6 @@ app.set('view engine', 'ejs');
 
 require("./server/config/routes.js")(app);
 
-var server = app.listen(port, function() {
+app.listen(port, function() {
  console.log("listening on port " + port);
 });
