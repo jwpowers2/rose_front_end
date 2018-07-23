@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 
 
 var app = express();
-const port = 8000;
+const port = 80;
 
 /*
 app.use(function(req, res, next) {
